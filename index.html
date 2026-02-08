@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo Básico HTML + CSS + JS</title>
+
+    <style>
+        /* ===== CSS ===== */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: white;
+            transition: background-color 0.5s ease;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #mensaje {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== HTML ===== -->
+    <h1>Mi primera página interactiva</h1>
+    <button onclick="cambiarColor()">Haz clic aquí</button>
+    <p id="mensaje"></p>
+
+    <script>
+        // ===== JavaScript =====
+        function cambiarColor() {
+            document.body.style.backgroundColor = "#d0e6ff";
+            document.getElementById("mensaje").innerText = "¡El color del fondo ha cambiado!";
+        }
+    </script>
+
+</body>
+</html>
